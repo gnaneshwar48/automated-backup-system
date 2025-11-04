@@ -1,0 +1,8 @@
+[2025-11-03 10:34:35] Created directory: /mnt/c/Users/user/OneDrive/Desktop/Automated Backup System/backups/weekly
+[2025-11-03 10:34:35] Created directory: /mnt/c/Users/user/OneDrive/Desktop/Automated Backup System/backups/monthly
+[2025-11-03 10:34:35] Starting backup for: /mnt/c/Users/user/OneDrive/Desktop/Automated Backup System
+[2025-11-03 10:34:35] [DRYRUN] Would create: /mnt/c/Users/user/OneDrive/Desktop/Automated Backup System/backups/daily/backup-2025-11-03_10-34-35.tar.gz
+[2025-11-03 10:34:35] Backup process completed successfully ✅
+[2025-11-03 10:34:48] Starting backup for: /mnt/c/Users/user/OneDrive/Desktop/Automated Backup System
+[2025-11-03 10:34:48] Backup created: /mnt/c/Users/user/OneDrive/Desktop/Automated Backup System/backups/daily/backup-2025-11-03_10-34-48.tar.gz
+[2025-11-03 10:34:48] Backup process completed successfully ✅
