@@ -1,4 +1,4 @@
-Automated Backup System
+# Project Name : Automated Backup System
 Project Overview :
 
 The Automated Backup System is a Bash-based utility that automatically creates compressed backups, verifies their integrity, and cleans up older backups using configurable retention rules. It is designed to run safely, efficiently, and reliably — ideal for developers, system administrators, or anyone who needs automated file backups on Linux/macOS.
@@ -21,7 +21,7 @@ Restore from any backup archive
 Comprehensive logging system (backup.log)
 Configurable via backup.config file
 
-Project Structure:
+# Project Structure:
 
 backup-system/
 ├── backup.sh              # Main script
@@ -86,7 +86,7 @@ Example:
 [2025-11-07 10:30:46] INFO: Checksum verified successfully
 [2025-11-07 10:31:10] INFO: Deleted old backup: backup-2025-10-01-0830.tar.gz
 
-Usage Examples :
+# Usage Examples :
 1. Create Backups:
 ./backup.sh /home/user/documents
 
@@ -117,7 +117,7 @@ The script gracefully handles all common errors:
 | Interrupted backup       | Partial backups cleaned up automatically       |
 
 
-Testing Instructions
+# Testing Instructions
 
 1. Create a test folder:
 mkdir -p test_data/documents
@@ -136,7 +136,7 @@ touch -d "7 days ago" backups/backup-2025-10-31-0830.tar.gz
 
 6. Test dry-run mode to preview actions.
 
-Rotation Algorithm Explained
+# Rotation Algorithm Explained
 
 The script identifies old backups by timestamp in filenames:
 backup-YYYY-MM-DD-HHMM.tar.gz
@@ -151,11 +151,11 @@ Checksum Verification:
 Every backup file has a matching .sha256 file generated via:
 sha256sum backup-2025-11-07-1030.tar.gz > backup-2025-11-07-1030.tar.gz.sha256
 
-During Verification :
+# During Verification :
 sha256sum -c backup-2025-11-07-1030.tar.gz.sha256
 If the result is OK, integrity is confirmed.
 
-Design Decisions:
+# Design Decisions:
 1.Bash chosen for portability and simplicity.
 2.Tar + gzip provides efficient compression and easy restore.
 3.SHA256 checksums ensure data integrity.
@@ -163,18 +163,18 @@ Design Decisions:
 5.Config file separates logic from settings, making it user-friendly.
 6.Logs provide full audit trail of backups and deletions.
 
-Known Limitations:
+# Known Limitations:
 No email notifications (can be added with mail or sendmail)
 No incremental backup feature (only full backups for now)
 Works best on Linux/macOS — not natively tested on Windows PowerShell
 
-Future Improvements:
+# Future Improvements:
 Add email notification system
 Add incremental backups using rsync
 Add remote upload (e.g., AWS S3, Google Drive)
 Add GUI dashboard
 
-Conclusion:
+# Conclusion:
 This project provides a reliable, configurable, and easy-to-use backup automation system.
 It helps maintain organized, verified backups while saving time and storage space.
 
