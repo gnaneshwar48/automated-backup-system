@@ -1,6 +1,6 @@
 Automated Backup System
+Project Overview :
 
-Project Overview: 
 The Automated Backup System is a Bash-based utility that automatically creates compressed backups, verifies their integrity, and cleans up older backups using configurable retention rules. It is designed to run safely, efficiently, and reliably — ideal for developers, system administrators, or anyone who needs automated file backups on Linux/macOS.
 
 This project helps prevent data loss by:
